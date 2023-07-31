@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wd-border  {
+  border-style: solid;
+}
+
+.wd-background {
+  background-color: moccasin;
+  /* border-right-style: solid; */
+}
+
+.wd-background2 {
+  padding: 0;
+}
+
+.full-height-sidebar {
+  flex: 0 0 auto; /* Let the sidebar grow if there's extra space */
+}
+
+.full-height-content {
+  flex: 1 0 auto; /* Let the content grow to fill remaining space */
+  overflow-y: auto; /* If content overflows, allow scrolling */
+  padding: 0;
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adjust the row height to 100% of the parent container */
+.row {
+  flex: 1 0 auto;
+}
+
+.wd-button-font {
+  color: white;
+  text-decoration: none;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Styles for the LinkedIn button */
+.wd-button-font {
+  color: white;
+  text-decoration: none;
+}
+
+.wd-button-font:hover {
+  color: white;
+  text-decoration: none;
+}
