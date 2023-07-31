@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import { DiJavascript, DiPython } from "react-icons/di";
 
 const SkillsScreen = () => {
   const cellStyle = {
@@ -47,7 +46,39 @@ const SkillsScreen = () => {
               />
             </td>
           </tr>
-          {/* Additional rows go here */}
+          <tr>
+            <td style={cellStyle}>
+            <img
+                className="wd-img-width"
+                src="./images/Java.png"
+                alt="Java"
+              />
+            </td>
+            <td style={cellStyle}>
+              <img
+                className="wd-img-width"
+                src="./images/Python.png"
+                alt="Python"
+              />
+            </td>
+            <td style={cellStyle}>
+              <img className="wd-img-width" src="./images/C++.png" alt="C++" />
+            </td>
+            <td style={cellStyle}>
+              <img
+                className="wd-img-width"
+                src="./images/CSharp.png"
+                alt="CSharp"
+              />
+            </td>
+            <td style={cellStyle}>
+              <img
+                className="wd-img-width"
+                src="./images/JS.png"
+                alt="Javascript"
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
