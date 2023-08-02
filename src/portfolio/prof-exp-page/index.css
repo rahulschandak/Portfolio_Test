@@ -16,7 +16,7 @@
 .wd-background5 {
   font-family: "Times New Roman", serif;
   font-size: 18px;
-  background-color: moccasin;
+  background-color: black;
   border-radius: 20px;
 }
 
@@ -43,7 +43,7 @@
   font-weight: bold;
   margin-top: 25px;
   margin-bottom: 2%;
-  color: white;
+  color: black;
 }
 
 .wd-job-info {
@@ -80,6 +80,7 @@
 
 .info-container {
   flex: 1 1 auto;
+  color: white;
 }
 
 .wd-width-image {
@@ -93,6 +94,16 @@
   height: 100%;
 }
 
+.wd-mobile-img-width {
+  max-width: 100;
+  height: auto;
+}
+
 .wd-background-black {
   background-color: black;
+}
+
+.wd-margin-bottom {
+  margin-bottom: 5%;
+  padding: 3%;
 }

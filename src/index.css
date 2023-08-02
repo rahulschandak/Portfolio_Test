@@ -17,7 +17,7 @@ code {
 }
 
 .wd-background {
-  background-color: moccasin;
+  background-color: lightgrey;
   /* border-right-style: solid; */
 }
 
@@ -79,4 +79,10 @@ code {
 .wd-button-font:hover {
   color: white;
   text-decoration: none;
+}
+
+.wd-border-right {
+  color: black;
+  border-right: solid;
+  border-width: thick;
 }

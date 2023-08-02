@@ -43,7 +43,7 @@ function Portfolio() {
       <div className="row flex-grow-1">
         {/* Left Column XL, XXL */}
         {!isMobile && (
-          <div className="col-3 wd-background list-group min-vh-100">
+          <div className="col-3 wd-background list-group min-vh-100 wd-border-right">
             <NavigationSidebar />
           </div>
         )}
