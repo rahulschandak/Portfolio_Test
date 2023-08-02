@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,28 +30,9 @@ const NavigationSidebar2 = () => {
     { name: "Resume", icon: faFile },
     { name: "Contact", icon: faContactCard },
   ];
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const handleResize = () => {
-    setIsSmallScreen(window.innerWidth < 992 && window.innerWidth > 783);
-  };
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <div className="wd-padding-top ">
       <div className="">
-        {/* <div className="wd-profile-pic">
-          <img
-            src="images/ProfilePic.jpeg"
-            alt="ProfilePic"
-            className="wd-centered-image wd-rounded-circle"
-          />
-        </div> */}
-
         <div className="wd-profile-pic">
           <label> Rahul Chandak </label>
         </div>
@@ -86,33 +67,18 @@ const NavigationSidebar2 = () => {
           </div>
         </div>
 
-        {isSmallScreen && (<div className="wd-nav-bar-md-sm wd-background2">
+        <div className="wd-nav-bar-md-sm wd-background2">
           {links.map((link) => (
             <Link
               to={`/${link.name}`}
               className={`list-group-item text-capitalize ${
                 active === link.name ? "active" : ""
-              }`}
+              } d-flex align-items-center justify-content-center w-100`}
             >
-              <FontAwesomeIcon icon={link.icon} /> &nbsp;
-              {link.name}
+              <FontAwesomeIcon icon={link.icon} />
             </Link>
           ))}
-        </div>)}
-
-        {!isSmallScreen && (<div className="wd-nav-bar-md-sm wd-background2">
-          {links.map((link) => (
-            <Link
-              to={`/${link.name}`}
-              className={`list-group-item text-capitalize ${
-                active === link.name ? "active" : ""
-              }`}
-            >
-              <FontAwesomeIcon icon={link.icon} /> &nbsp;
-            </Link>
-          ))}
-        </div>)}
-
+        </div>
       </div>
 
       {/* <div className="d-block d-xl-none list-group"></div> */}
