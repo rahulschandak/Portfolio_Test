@@ -63,3 +63,7 @@
 .wd-padding-left {
   padding-left: 25px;
 }
+
+.wd-zero-padding {
+  padding: 0;
+}
